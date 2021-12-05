@@ -73,13 +73,13 @@ Below we are going to use Amazon's Leadership Principle's. Amazon uses these dur
 ## Dive deep 
 ### Give me two examples of when you did more than what was required in any job experience.
 
-At [your employer], we lost the lead to the Pentesting team. In addition, there was little to know structure for the team, and there was a lack of visibility as to what they were doing.
-The CISO planned on retiring the team. However, I understand the importance of Pentesting skills and how much we need it to test our application services for potential exploits. I volunteered to migrate the Pentesting team under vulnerability management where I would take lead and prioritize their tasks and goals along with our own. This wasn't something that I had to do, it was more than what was required, and it was everything I wanted to do. Incorporating Pentesting with Vulnerability Management increased patch 
-management efforts. Because after certain vulnerabilities were discovered, we utilized Pentesting to provide proof of concepts. Providing the proof of concepts gave us more leverage as a Vulnerability team when emphasizing how important it was to deploy patches to affected systems. 
+    At [your employer], we lost the lead to the Pentesting team. In addition, there was little to know structure for the team, and there was a lack of visibility as to what they were doing.
+    The CISO planned on retiring the team. However, I understand the importance of Pentesting skills and how much we need it to test our application services for potential exploits. I volunteered to migrate the Pentesting team under vulnerability management where I would take lead and prioritize their tasks and goals along with our own. This wasn't something that I had to do, it was more than what was required, and it was everything I wanted to do. Incorporating Pentesting with Vulnerability Management increased patch 
+    management efforts. Because after certain vulnerabilities were discovered, we utilized Pentesting to provide proof of concepts. Providing the proof of concepts gave us more leverage as a Vulnerability team when emphasizing how important it was to deploy patches to affected systems. 
 
-At [your employer] we have an infrastructure team that uses terraform to build instances for us. However, I wasn't too fond of the amount of time we would lose waiting for infrastructure to 
-prioritize our requests with what they had going on. I took it upon myself to learn and understand terraform so we can leverage it to accomplish our goals without waiting
-for the infrastructure team. It took some time, studying, and hands-on application to successfully learn this tool so we can use it as a team. It was more than required, however it was imperative to improving operations as a team. This increased our productivity and effectiveness when completing customer tasks. 
+    At [your employer] we have an infrastructure team that uses terraform to build instances for us. However, I wasn't too fond of the amount of time we would lose waiting for infrastructure to 
+    prioritize our requests with what they had going on. I took it upon myself to learn and understand terraform so we can leverage it to accomplish our goals without waiting
+    for the infrastructure team. It took some time, studying, and hands-on application to successfully learn this tool so we can use it as a team. It was more than required, however it was imperative to improving operations as a team. This increased our productivity and effectiveness when completing customer tasks. 
 
 ## Backbone, disagree and commit
 ### Tell me about a time when you had to step up and disagree with a team member's approach.
