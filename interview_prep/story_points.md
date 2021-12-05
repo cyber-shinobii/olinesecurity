@@ -6,7 +6,7 @@ Below we are going to use Amazon's Leadership Principle's. Amazon uses these dur
 ## Customer Obsession
 ### Give me an example of a time when you did not meet a client’s expectation. What happened, and how did you attempt to rectify the situation?
 
-    When I was working at *[employer's name]* we had a customer that wanted us to collect logs from one of their SCADA devices and monitor its events for suspicious/malicious activity.
+    When I was working at *employer's name* we had a customer that wanted us to collect logs from one of their SCADA devices and monitor its events for suspicious/malicious activity.
     The issue was that there was no way for my team to install and configure a Splunk agent on those devices. SCADA devices aren't your typical computing devices, and you can't interact with most of them how we would with a typical server or networking device. This meant we couldn't use the traditional methods to forward logs to our Splunk Server. This obviously frustrated the customers as they didn't know any other work arounds, and members on my team weren't equipped to implement other solutions. I took it upon myself to satisfy the customer’s overall goal. Their goal was to forward logs from this embedded system to Splunk for monitoring. So instead of configuring a Splunk agent on the device (which we couldn't) I worked with one of their engineers to create a script
     that would format and forward their logs to a syslog server. From there, we could capture and forward their logs to Splunk. As a result, this solution satisfied the customers’ requests and future requests that had the same issues. 
 
