@@ -1,5 +1,5 @@
 # O-Line Security
-This repo houses information that will help you capitalize on employment opportunities. Please keep in mind, this repo will only be successful if you possess a well-developed resume, sound technical skills, and can thoroughly articulate both resume and skills. O-Line Security can help you develop all three (skills, resume, and articulation) through our training program. Please visit Olinesecurity.com for more.
+This repo houses information that will help you capitalize on employment opportunities. Please keep in mind, this repo will only be successful if you possess a well-developed resume, sound technical skills, and can thoroughly articulate both resume and skills. We do not advise using this repo without those three factors, specifically the hands-on training. O-Line Security can help you develop all three (skills, resume, and articulation) through our training program. Please visit Olinesecurity.com for more.
 
 ## Interview workflow 
 Getting a job usually requires a few interviews. Typically there are 3 interviews, there could be more or less. The interview workflow document will help you learn what to expect. 
