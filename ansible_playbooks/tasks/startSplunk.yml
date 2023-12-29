@@ -1,0 +1,2 @@
+    - name: Start Splunk
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk start"

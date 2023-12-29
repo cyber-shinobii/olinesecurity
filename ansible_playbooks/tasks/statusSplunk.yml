@@ -1,0 +1,2 @@
+    - name: Get Splunk Status
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk status"
