@@ -1,0 +1,7 @@
+---
+- name: Start Splunk
+  hosts: splunkAll
+  become: yes
+  tasks:
+    - name: Start Splunk
+      import_tasks: ../tasks/startSplunk.yml

@@ -1,0 +1,78 @@
+---
+- name: Install and Configure Splunk
+  hosts: splunkAll
+  become: yes
+  tasks:
+    - name: Download Splunk
+      command: "wget -O /tmp/splunk.tgz https://download.splunk.com/products/splunk/releases/9.1.2/linux/splunk-9.1.2-b6b9c8185839-Linux-x86_64.tgz"
+      args:
+        creates: "/tmp/splunk.tgz"
+
+    - name: Extract Splunk to /opt
+      ansible.builtin.unarchive:
+        src: "/tmp/splunk.tgz"
+        dest: "/opt/"
+        remote_src: yes
+
+    - name: Add Splunk user
+      ansible.builtin.user:
+        name: "splunk"
+        system: yes
+        home: "/opt/splunk"
+
+    - name: Set Splunk user home directory
+      ansible.builtin.user:
+        name: "splunk"
+        home: "/opt/splunk"
+
+    - name: Set Splunk ownership
+      ansible.builtin.file:
+        path: "/opt/splunk/"
+        owner: "splunk"
+        group: "splunk"
+        recurse: yes
+  
+    - name: Add line to Splunk-launch.conf
+      ansible.builtin.blockinfile:
+        path: "/opt/splunk/etc/splunk-launch.conf"
+        block: |
+          OPTIMISTIC_ABOUT_FILE_LOCKING = 1
+        create: yes
+        marker_format: ""
+
+    - name: Start Splunk and Accept License
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk start --accept-license --no-prompt --answer-yes"
+
+    - name: Stop Splunk
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk stop"
+
+    - name: Create user-seed.conf
+      ansible.builtin.file:
+        path: "/opt/splunk/etc/system/local/user-seed.conf"
+        state: touch
+        owner: "splunk"
+        group: "splunk"
+
+    - name: Add username and password to user-seed.conf
+      ansible.builtin.blockinfile:
+        path: "/opt/splunk/etc/system/local/user-seed.conf"
+        block: |
+          [user_info]
+          USERNAME = admin
+          PASSWORD = splunker2024
+        create: yes
+        marker_format: ""
+
+    - name: Set Splunk ownership for user-seed.conf
+      ansible.builtin.file:
+        path: "/opt/splunk/"
+        owner: "splunk"
+        group: "splunk"
+
+    - name: Start Splunk
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk start"
+
+    - name: Remove Splunk tar file
+      ansible.builtin.file:
+        path: "/tmp/splunk.tgz"
+        state: absent
