@@ -1,0 +1,2 @@
+    - name: Stop Splunk
+      command: "sudo -H -u splunk /opt/splunk/bin/splunk stop"

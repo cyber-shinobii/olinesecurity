@@ -1,0 +1,7 @@
+---
+- name: Stop Splunk
+  hosts: splunkAll
+  become: yes
+  tasks:
+    - name: Stop Splunk
+      import_tasks: ../tasks/stopSplunk.yml
