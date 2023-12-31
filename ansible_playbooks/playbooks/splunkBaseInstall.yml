@@ -33,12 +33,10 @@
         recurse: yes
   
     - name: Add line to Splunk-launch.conf
-      ansible.builtin.blockinfile:
+      ansible.builtin.lineinfile:
         path: "/opt/splunk/etc/splunk-launch.conf"
-        block: |
-          OPTIMISTIC_ABOUT_FILE_LOCKING = 1
+        line:  OPTIMISTIC_ABOUT_FILE_LOCKING = 1
         create: yes
-        marker_format: ""
 
     - name: Start Splunk and Accept License
       command: "sudo -H -u splunk /opt/splunk/bin/splunk start --accept-license --no-prompt --answer-yes"
@@ -61,7 +59,6 @@
           USERNAME = admin
           PASSWORD = splunker2024
         create: yes
-        marker_format: ""
 
     - name: Set Splunk ownership for user-seed.conf
       ansible.builtin.file:
