@@ -12,10 +12,10 @@
 
 ## Final Interview
 1. Your final interview is usually not as technical as your "technical" (the interview after speaking with the recruiter) interview. This will be more of an interview about your character with technical questions here and there. Nonetheless, I would still study for this as if it is a technical interview. Things to remember: 
-    a. talk about your home labs and how you're eager to learn and get better at new things. this shows your dedication and passion. 
-    b. mention security blogs or resources you use to keep up with the latest security events. this shows you are proactive. 
-    c. bring up what you like about a company. this shows your interests in the company. 
-    d. ask questions. this shows your seriousness.
+    - talk about your home labs and how you're eager to learn and get better at new things. this shows your dedication and passion. 
+    - mention security blogs or resources you use to keep up with the latest security events. this shows you are proactive. 
+    - bring up what you like about a company. this shows your interests in the company. 
+    - ask questions. this shows your seriousness.
 
 
 **Please keep in mind that this isn’t the standard but a common workflow for interviews.**
