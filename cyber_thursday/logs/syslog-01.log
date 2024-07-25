@@ -1,0 +1,15 @@
+Jul 25 12:34:56 localhost sshd[12345]: Accepted password for user from 192.168.1.101 port 54321 ssh2
+Jul 25 12:35:10 localhost sshd[12346]: Failed password for invalid user admin from 192.168.1.102 port 54322 ssh2
+Jul 25 12:35:30 localhost systemd[1]: Started Session 1 of user root.
+Jul 25 12:35:50 localhost kernel: [123456.789012] eth0: link is down
+Jul 25 12:36:05 localhost kernel: [123456.789123] eth0: link is up
+Jul 25 12:36:15 localhost sudo:   user : TTY=pts/1 ; PWD=/home/user ; USER=root ; COMMAND=/bin/ls
+Jul 25 12:36:45 localhost crond[12347]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 25 12:37:00 localhost httpd[12348]: 192.168.1.103 - - [25/Jul/2024:12:37:00 +0000] "GET /index.html HTTP/1.1" 200 1234
+Jul 25 12:37:15 localhost ntpd[12349]: synchronized to 192.168.1.104, stratum 2
+Jul 25 12:37:30 localhost dhclient[12350]: DHCPREQUEST on eth0 to 192.168.1.1 port 67
+Jul 25 12:37:45 localhost dhclient[12350]: DHCPACK from 192.168.1.1
+Jul 25 12:38:00 localhost kernel: [123456.789234] CPU0: Core temperature above threshold, cpu clock throttled
+Jul 25 12:38:15 localhost sshd[12351]: Disconnected from authenticating user root 192.168.1.105 port 54323 [preauth]
+Jul 25 12:38:30 localhost systemd[1]: Stopping Session 1 of user root.
+Jul 25 12:38:45 localhost systemd[1]: Stopped Session 1 of user root.
