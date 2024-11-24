@@ -12,7 +12,7 @@ Download the Netstat Logs:
 Ingest Logs into Splunk:
 
 	•	Choose your method of ingestion. For bonus points, use backend ingestion (via a forwarder or another method).
-	•	Ensure that the logs are indexed into the main index with a sourcetype of netstat_log.
+	•	Ensure that the logs are indexed into the main index with a sourcetype of oline:netstat.
 
 Extract Essential Fields:
 
