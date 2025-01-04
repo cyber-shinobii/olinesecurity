@@ -4,9 +4,9 @@ Objective: Your mission is to onboard a set of Netstat logs into Splunk, extract
 
 Instructions:
 
-Download the Netstat Logs:
+Netstat Logs:
 
-	• Get your hands on the Netstat logs (you can simulate this data or use logs from your system).
+	• Generate your own Netstat logs.
 	• These logs should be formatted similarly to the output of the netstat command, which includes columns like Foreign, Local, PID/Program, Proto, Recv-Q, Send-Q, and State.
 
 Ingest Logs into Splunk:
